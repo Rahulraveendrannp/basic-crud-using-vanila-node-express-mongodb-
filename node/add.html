@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+</head>
+<body >
+  <a href="/api/todos" class="text-white bg-blue-700 font-bold rounded-lg text-sm px-5 py-2.5 text-center mx-10 " >HOME PAGE</a>
+    <section class=" w-full h-full">
+<form class="w-4/12 text-center m-auto mt-28" action="/api/todos/add" method="POST" id="add_user">
+    <div class="mb-6">
+      <label for="name" class="block mb-2 text-sm font-bold text-black  ">Title</label>
+      <input type="name" id="name" name="title" value="" class=" font-bold shadow-sm bg-gray-50 border border-gray-300 text-black  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"  required>
+    </div>
+    <div class="mb-6">
+      <label for="department" class="block mb-2 text-sm font-bold text-black  ">Description</label>
+      <input type="text" id="department" name="description" value="" class="font-bold shadow-sm bg-gray-50 border border-gray-300 text-black  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required>
+    </div>
+    <div class="mb-6">
+      <label for="phone" class="block mb-2 text-sm font-bold text-black  ">Status</label>
+      <input type="text" name="completed" value="" id="phone" class="font-bold shadow-sm bg-gray-50 border border-gray-300 text-black  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required>
+    </div>
+   
+    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">ADD</button>
+  </form>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+<style>
+*{background-color: azure}
+</style>
+
+<script>
+
+    $("#add_user").submit((event)=>{
+        alert("data inserted succesfully")
+    })
+</script>
+</html>
